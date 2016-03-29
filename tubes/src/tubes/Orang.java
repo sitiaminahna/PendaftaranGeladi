@@ -53,5 +53,11 @@ public abstract class Orang {
 
     public void setJenisKelamin(String jenisKelamin) {
         this.jenisKelamin = jenisKelamin;
-    }        
+    }
+    public String toString(){
+        String x = "Nama    : " + this.getNama() +
+                   "\n Jenis Kelamin  : " + this.getJenisKelamin() +
+                   "\n Alamat : " + this.getAlamat();
+                   "\n Telp : " +this.getTelp();
+        return x;
 }

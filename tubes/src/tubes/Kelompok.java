@@ -19,8 +19,11 @@ public class Kelompok {
     }
   
     public void addAnggota(Mahasiswa m) {
-        anggota[jmlMhs] = m;
-        jmlMhs++;
+        if (!m.isCekKelompok()) {
+            m.setCekKelompok(true);
+            anggota[jmlMhs] = m;
+            jmlMhs++;
+        }
     }
     public void getAnggota(){
         for(int i = 0; i < anggota.length; i++){
@@ -43,5 +46,10 @@ public class Kelompok {
             }
         }         
         return anggota[i];      
-    }                
+    }
+    public String toString(){
+        String x = "Nama Anggota   : " + this.getNama() +
+                   "\nJenis Perusahaan  : " + this.getJenis() +
+                   "\nJumlah Pegawai : " + this.getJumlahPegawai();
+        return x;
 }
