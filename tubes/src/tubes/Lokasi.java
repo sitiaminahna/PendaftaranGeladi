@@ -54,5 +54,9 @@ public class Lokasi {
     public void removeKelompok (Mahasiswa mhs) {
         this.jmlKelompok--;
     }
- 
+    public String toString(){
+        String Lokasi = "Nama Perusahaan : " + this.getNamaPerusahaan()+
+                        "\n Nama Kota    : " + this.getKota();
+        return Lokasi;
+    }
 }

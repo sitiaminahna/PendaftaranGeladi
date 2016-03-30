@@ -48,5 +48,9 @@ public class Mahasiswa extends Orang{
     public void setStatus(boolean status) {
         this.status = status;
     }
-        
+    public String toString(){
+        String Mahasiswa = "Nim         : " + this.getNim() +
+                           "\n Jurusan  : " + this.getJurusan();
+        return Mahasiswa;
+   }    
 }

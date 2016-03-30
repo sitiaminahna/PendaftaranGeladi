@@ -55,9 +55,11 @@ public abstract class Orang {
         this.jenisKelamin = jenisKelamin;
     }
     public String toString(){
-        String x = "Nama    : " + this.getNama() +
-                   "\n Jenis Kelamin  : " + this.getJenisKelamin() +
-                   "\n Alamat : " + this.getAlamat();
-                   "\n Telp : " +this.getTelp();
-        return x;
+        String Orang = "Nama            : " + this.getNama() +
+                   "\n Jenis Kelamin    : " + this.getJenisKelamin() +
+                   "\n Alamat           : " + this.getAlamat() +
+                   "\n Telp             : " +this.getTelp();
+        return Orang;
+}
+
 }

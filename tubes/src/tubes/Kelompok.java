@@ -47,9 +47,5 @@ public class Kelompok {
         }         
         return anggota[i];      
     }
-    public String toString(){
-        String x = "Nama Anggota   : " + this.getNama() +
-                   "\nJenis Perusahaan  : " + this.getJenis() +
-                   "\nJumlah Pegawai : " + this.getJumlahPegawai();
-        return x;
+ 
 }
